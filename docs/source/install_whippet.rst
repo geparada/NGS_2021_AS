@@ -50,11 +50,6 @@ In order to execute Whippet you will need to access its installation path. Insid
 
 .. note:: Make sure you save the path where Whippet is installed on a block note. It will be hard to remember otherwise.
 
-.. important:: To make sure the ``.jl`` scripts have access to write run:
-
-   .. code-block:: bash
-      `sudo chmod +x` bin/whippet-*
-  
 
 
 
