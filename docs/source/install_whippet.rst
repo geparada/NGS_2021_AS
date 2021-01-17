@@ -17,7 +17,7 @@ Whippet is a fast, lightweight and accurate method for quantifying alternative s
 Installation
 ------------
 
-Whippet was developed as a `Julia <https://julialang.org/>`_ package. During the previous section module (Setup) whe already installed Julia. However, we now need to install Whippet's package. To this end, first we need to enter Julia's interactive mode by just typing: 
+Whippet was developed as a `Julia <https://julialang.org/>`_ package. During the previous section module (Setup) we already installed Julia. However, we now need to install Whippet's package. To this end, first we need to enter Julia's interactive mode by just typing: 
 
 .. code-block:: bash
 
@@ -34,7 +34,7 @@ Then from this interactive mode we can run
 .. note:: 
 
 
-   This command may take around 30 mins to install. In the mind time we recommend you to read Whippet's paper. Please let us know if you require access.
+   This command may take up tp 30 mins to install. In the meantime we recommend you to read Whippet's paper. Please let us know if you require access.
 
 
 Once the installation is finished, you can find the path where Whippet was installed by using the following command under Julia's interactive mode:

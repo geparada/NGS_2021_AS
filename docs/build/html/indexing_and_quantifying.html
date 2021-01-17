@@ -178,18 +178,18 @@
 </div></blockquote>
 <div class="section" id="building-a-transcriptome-index">
 <h2>Building a transcriptome index<a class="headerlink" href="#building-a-transcriptome-index" title="Permalink to this headline">¶</a></h2>
-<p>Instead of the classical approach of mapping reads to the genome and then quantify gene expression, Whippet’s quantification in performed considering the gene annotation coordinate and features. This are usually stored as a GTF file and Whippet’s take these as input to generate transcript models. In order to generate such models, one needs to build an index based on the GTF and Genomic sequences (fasta). This can be achieved by running the following command:</p>
+<p>Instead of the classical approach of mapping reads to the genome and then quantifying gene expression, Whippet’s quantification is performed considering the gene annotation coordinates and features. These are usually stored as a GTF file and Whippet takes these as input to generate transcript models. In order to generate such models, one needs to build an index based on the GTF and Genomic sequences (fasta).</p>
 <div class="admonition-challenge-1 admonition">
 <p class="admonition-title">Challenge 1</p>
 <p>One of the key skills required to learn bioinformatics is to understand the documentation from tools deposited on GitHub or other popular software archives. In order to index the transcriptme using Whippet read the official documentation from Whippet’s <a class="reference external" href="https://github.com/timbitz/Whippet.jl">GitHub</a>. What you need to know is on section 2A. Use the files available at <code class="docutils literal notranslate"><span class="pre">Data/dm6/</span></code>.</p>
 </div>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
-<p><code class="docutils literal notranslate"><span class="pre">dm6.ensGene.gtf.gz</span></code> correspond to a GTF file, while <code class="docutils literal notranslate"><span class="pre">dm6.fa.gz</span></code> is the <a class="reference external" href="https://www.ncbi.nlm.nih.gov/assembly/GCF_000001215.4/">release 6 of</a> <cite>Drosophila melanogaster</cite>’s genome.</p>
+<p><code class="docutils literal notranslate"><span class="pre">dm6.ensGene.gtf.gz</span></code> corresponds to a GTF file, while <code class="docutils literal notranslate"><span class="pre">dm6.fa.gz</span></code> is the <cite>release 6 &lt;https://www.ncbi.nlm.nih.gov/assembly/GCF_000001215.4/&gt;`_of  `Drosophila melanogaster</cite>’s genome.</p>
 </div>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
-<p>To execute any of the whippet commands you should locate the <code class="docutils literal notranslate"><span class="pre">/bin</span></code> folder inside.</p>
+<p>To execute any of the whippet commands you should locate the <code class="docutils literal notranslate"><span class="pre">/bin</span></code> folder inside the directory where Whippet was installed.</p>
 </div>
 </div>
 <div class="section" id="quantifying-splicing-nodes-and-transcripts">
@@ -202,10 +202,10 @@
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>julia bin/whippet-quant.jl sample.fastq.gz -o out_dir/sample --sam &gt; sample.sam
 </pre></div>
 </div>
-<p>Where <cite>out_dir/sample</cite> is the base name for the output (five files will be generated) and sample.sam is an optional output that whippets provide when <code class="docutils literal notranslate"><span class="pre">--sam</span></code> flag is given.</p>
+<p>Where <cite>out_dir/sample</cite> is the base name for the output (five files will be generated) and sample.sam is an optional output that whippet provides when the <code class="docutils literal notranslate"><span class="pre">--sam</span></code> flag is given.</p>
 <div class="admonition-challenge-2 admonition">
 <p class="admonition-title">Challenge 2</p>
-<p>Apply the general syntax explained above to quantify the 6 samples you downloaded (<code class="docutils literal notranslate"><span class="pre">.fastq.gz</span></code> files)</p>
+<p>Apply the general syntax explained above to quantify the 6 samples you downloaded (<code class="docutils literal notranslate"><span class="pre">.fastq.gz</span></code> files). You could write a bash script to do this.</p>
 </div>
 </div>
 </div>
