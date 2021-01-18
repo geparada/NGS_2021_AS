@@ -28,3 +28,8 @@ Where:
         1. How many differentially included nodes did you find? (See documentation to find recommendations from the authors)
         2. How many of them might be biologically relevant based on DeltaPsi obtained values?
         3. What type of alternative splicing node are the ones found significantly different and biologically relevant ``TBPH knockout``?
+
+
+.. admonition:: Challenge 5
+
+    Important part of the job as bioinformatician is to inspect the obtained results using a genome browser. Use the IGV to generate `sashimi plots <https://software.broadinstitute.org/software/igv/Sashimi>`_ that allow you to evaluate the changes if the changes in splicing after ``TBPH knockout`` looks convincing.

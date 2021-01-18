@@ -22,7 +22,7 @@ Instead of the classical approach of mapping reads to the genome and then quanti
     One of the key skills required to learn bioinformatics is to understand the documentation from tools deposited on GitHub or other popular software archives. In order to index the transcriptme using Whippet read the official documentation from Whippet's `GitHub <https://github.com/timbitz/Whippet.jl>`_. What you need to know is on section 2A. Use the files available at ``Data/dm6/``.
 
 
-.. tip:: ``dm6.ensGene.gtf.gz`` corresponds to a GTF file, while ``dm6.fa.gz`` is the `release 6 <https://www.ncbi.nlm.nih.gov/assembly/GCF_000001215.4/>`_of  `Drosophila melanogaster`'s genome.
+.. tip:: ``dm6.ensGene.gtf.gz`` corresponds to a GTF file, while ``dm6.fa.gz`` is the `release 6 <https://www.ncbi.nlm.nih.gov/assembly/GCF_000001215.4/>`_ of  `Drosophila melanogaster`'s genome.
 
 .. important:: To execute any of the whippet commands you should locate the ``/bin`` folder inside the directory where Whippet was installed.
 
