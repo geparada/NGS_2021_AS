@@ -36,7 +36,7 @@ The number of genes that undergoes through alternative splicing is known to be s
 
 However, as most of bioinformaticians, he was a bit lazy to finish the job and he asked you to do it instead! He sent you the ``.psi.gz`` he obtained. You can find these files at ``Data/Advanced/``.
 
-.. note:: ``rep`` indicate biological replicates and ``L`` technical replicates. On this script technical replicates are pooled during the quantification step (check ``--force-gz`` parameter on Whippet's documentation 
+.. note:: As a general rule ``rep`` indicates biological replicates and ``L`` technical replicates, which are samples that were extracted from the same animal but sequenced on different runs. Thus, on this script technical replicates that correspond to the same biological sample are pooled during the quantification step (check ``--force-gz`` parameter on Whippet's documentation) 
 
 
 .. admonition:: FINAL CHALLENGE
