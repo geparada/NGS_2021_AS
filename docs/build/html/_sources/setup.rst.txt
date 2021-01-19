@@ -21,16 +21,6 @@ Follow the instructions displayed in the command line by pressing the ``Enter`` 
 
     Thank you for installing Miniconda3!
 
-Moreover, if you list content inside the home directory, you will see a ``miniconda3`` folder. To make sure conda has the rights to write files on this directory and install software, please type the following commands:
-
-.. code-block:: bash
-
-
-    sudo chmod 755 -R /home/manager
-
-.. note::
-
-    The command above will require your password, which is the same than your user name. To check your user name insert ``whoami`` in the terminal.
 
 Finally, to test everything is in place, execute the following command, which will instruct conda to update itself:
 
