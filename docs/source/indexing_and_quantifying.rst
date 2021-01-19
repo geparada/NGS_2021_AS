@@ -45,7 +45,7 @@ For this, one could deduce that the general command to run this step is by using
     julia bin/whippet-quant.jl sample.fastq.gz -o out_dir/sample --sam > sample.sam
 
 
-Where `out_dir/sample` is the base name for the output (five files will be generated) and sample.sam is an optional output that whippet provides when the ``--sam`` flag is given.
+Where ``out_dir/sample`` is the base name for the output (five files will be generated) and ``sample.sam`` is an optional output that whippet provides when the ``--sam`` flag is given.
 
 .. admonition:: Challenge 2
 
