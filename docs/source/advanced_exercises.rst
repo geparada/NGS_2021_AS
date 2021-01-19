@@ -30,9 +30,9 @@ The number of genes that undergoes through alternative splicing is known to be s
     julia /home/gp7/miniconda/envs/julia_0.6.1/share/julia/site/v0.6/Whippet/bin/whippet-index.jl --fasta mm10.fa.gz --gtf mm10.ensGene.gtf.gz --index mm10.index
 
     julia /home/gp7/miniconda/envs/julia_0.6.1/share/julia/site/v0.6/Whippet/bin/whippet-quant.jl <( cat  midbrain_E10.5_rep1*.fastq.gz) --force-gz  -x mm10.index.jls -o midbrain_E10.5_rep1
-    julia /home/gp7/miniconda/envs/julia_0.6.1/share/julia/site/v0.6/Whippet/bin/whippet-quant.jl <( cat  midbrain_E10.5_rep2*.fastq.gz)  --force-gz  -x mm10.index.jls -o midbrain_E10.5_rep2
-    julia /home/gp7/miniconda/envs/julia_0.6.1/share/julia/site/v0.6/Whippet/bin/whippet-quant.jl <( cat  midbrain_E14.5_rep1*.fastq.gz)  --force-gz  -x mm10.index.jls -o midbrain_E14.5_rep1
-    julia /home/gp7/miniconda/envs/julia_0.6.1/share/julia/site/v0.6/Whippet/bin/whippet-quant.jl <( cat  midbrain_E14.5_rep2*.fastq.gz)  --force-gz  -x mm10.index.jls -o midbrain_E14.5_rep2
+    julia /home/gp7/miniconda/envs/julia_0.6.1/share/julia/site/v0.6/Whippet/bin/whippet-quant.jl <( cat  midbrain_E10.5_rep2*.fastq.gz) --force-gz  -x mm10.index.jls -o midbrain_E10.5_rep2
+    julia /home/gp7/miniconda/envs/julia_0.6.1/share/julia/site/v0.6/Whippet/bin/whippet-quant.jl <( cat  midbrain_E14.5_rep1*.fastq.gz) --force-gz  -x mm10.index.jls -o midbrain_E14.5_rep1
+    julia /home/gp7/miniconda/envs/julia_0.6.1/share/julia/site/v0.6/Whippet/bin/whippet-quant.jl <( cat  midbrain_E14.5_rep2*.fastq.gz) --force-gz  -x mm10.index.jls -o midbrain_E14.5_rep2
 
 However, as most of bioinformaticians, he was a bit lazy to finish the job and he asked you to do it instead! He sent you the ``.psi.gz`` he obtained. You can find these files at ``Data/Advanced/``.
 
