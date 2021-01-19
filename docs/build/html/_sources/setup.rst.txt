@@ -118,14 +118,13 @@ B) Check the metadata of the study and identify the experimental condition of ev
 Study design
 ------------
 
-In this project, we are going to study the effects on alternative splicing resulting from TBPH loss of function (LoF). For more details about the study please check the information of the study and its corresponding publication. 
-
+In this project, we are going start by studying the effects of a mutation in flies (`D. melanogaster`) over alternative splicing. The particular mutation that we are going to analyse is in a gene that is known as `bag of marbles` (bam), which is known to have an important effect over spermatogenesis and oogenesis (check this `link <https://www.sdbonline.org/sites/fly/cytoskel/bagomb1.htm>`_ for more information. The data we are going to analyse is available at the Short Read Archive (SRA) under the bioproject accession code of ``PRJNA117723``. In this study researchers have isolated mRNA from testis coming from either `wild-type` or `bam` mutant strains of flies. Since the mutation on this gene induces arrest during spermatogenesis, comparing RNA-seq samples from `wild-type` or `bam` mutant testes will enable us to identify potential alternative splicing events that are regulated during spermatogenesis. For this purpose, your bioinformatician friend wrote an script that will enable you to retrieve the data from SRA to then start the analysis.
 
 Exercise 2
 ^^^^^^^^^^
-Ops! the bioinformatician who wrote the script forgot to include two samples to study the effect of TBPH knockout! Before continuing please check all the samples available on SRA, identify the missing TBPH-mutant samples, and download them to ``Data/samples``
+Ops! the bioinformatician who wrote the script forgot to include two samples to study the effect of `bam` mutation over  knockout! Before continuing please check all the samples available on SRA, identify the missing sample, and download them to ``Data/samples``
 
-.. hint:: Check the ``Data/samples/download.sh`` file and the run metadata available on ``SRA``.
+.. hint:: Check the ``Data/samples/download.sh`` file and the study metadata available on `SRA <https://www.ncbi.nlm.nih.gov/sra>`_. You can copy one of the accession codes on the search bar and then click on the ``All runs`` link which is available under the ``Study`` section.   
 
 .. DANGER::
 

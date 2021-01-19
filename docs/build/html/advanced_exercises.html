@@ -163,7 +163,45 @@
             
   <div class="section" id="advanced-exercises">
 <h1>Advanced exercises<a class="headerlink" href="#advanced-exercises" title="Permalink to this headline">¶</a></h1>
-<p>TBC</p>
+<p>The number of genes that undergoes through alternative splicing is known to be substantially higher than invertebrates or other metazoans. Moreover, the biggest set of regulated AS events are associated with neuronal tissues and are particularly relevant during development of the brain. Therefore, you and your bioinformatician friend were excited to try out Whippet with some of the data that is available at <a class="reference external" href="https://www.encodeproject.org">ENCODE</a>. You decided that would be interesting to process RNA-seq samples from midbrain to detect alternative splicing events between E10.5 and E14.5. To this end,  your bioinformatician friend wrote the following script in bash:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="ch">#!/bin/bash</span>
+
+wget https://www.encodeproject.org/files/ENCFF099UUS/@@download/ENCFF099UUS.fastq.gz -O midbrain_E10.5_rep1_L01.fastq.gz
+wget https://www.encodeproject.org/files/ENCFF059FUK/@@download/ENCFF059FUK.fastq.gz -O midbrain_E10.5_rep1_L02.fastq.gz
+wget https://www.encodeproject.org/files/ENCFF052VGB/@@download/ENCFF052VGB.fastq.gz -O midbrain_E10.5_rep2_L01.fastq.gz
+wget https://www.encodeproject.org/files/ENCFF819ZTA/@@download/ENCFF819ZTA.fastq.gz -O midbrain_E10.5_rep2_L02.fastq.gz
+
+wget https://www.encodeproject.org/files/ENCFF156BSL/@@download/ENCFF156BSL.fastq.gz -O midbrain_E14.5_rep1_L01.fastq.gz
+wget https://www.encodeproject.org/files/ENCFF421QJA/@@download/ENCFF421QJA.fastq.gz -O midbrain_E14.5_rep1_L02.fastq.gz
+wget https://www.encodeproject.org/files/ENCFF499UQZ/@@download/ENCFF499UQZ.fastq.gz -O midbrain_E14.5_rep2_L01.fastq.gz
+wget https://www.encodeproject.org/files/ENCFF093YSD/@@download/ENCFF093YSD.fastq.gz -O midbrain_E14.5_rep2_L02.fastq.gz
+
+wget https://hgdownload.soe.ucsc.edu/goldenPath/mm10/bigZips/mm10.fa.gz -O  mm10.fa.gz
+wget https://hgdownload.soe.ucsc.edu/goldenPath/mm10/bigZips/genes/mm10.ensGene.gtf.gz -O mm10.ensGene.gtf.gz
+
+julia /lustre/scratch117/cellgen/team218/gp7/miniconda/envs/julia_0.6.1/share/julia/site/v0.6/Whippet/bin/whippet-quant.jl &lt;<span class="o">(</span> cat  midbrain_E10.5_rep1*.fastq.gz<span class="o">)</span> --force-gz  -x mm10.index.jls -o midbrain_E10.5_rep1
+julia /lustre/scratch117/cellgen/team218/gp7/miniconda/envs/julia_0.6.1/share/julia/site/v0.6/Whippet/bin/whippet-quant.jl &lt;<span class="o">(</span> cat  midbrain_E10.5_rep2*.fastq.gz<span class="o">)</span>  --force-gz  -x mm10.index.jls -o midbrain_E10.5_rep2
+julia /lustre/scratch117/cellgen/team218/gp7/miniconda/envs/julia_0.6.1/share/julia/site/v0.6/Whippet/bin/whippet-quant.jl &lt;<span class="o">(</span> cat  midbrain_E14.5_rep1*.fastq.gz<span class="o">)</span>  --force-gz  -x mm10.index.jls -o midbrain_E14.5_rep1
+julia /lustre/scratch117/cellgen/team218/gp7/miniconda/envs/julia_0.6.1/share/julia/site/v0.6/Whippet/bin/whippet-quant.jl &lt;<span class="o">(</span> cat  midbrain_E14.5_rep2*.fastq.gz<span class="o">)</span>  --force-gz  -x mm10.index.jls -o midbrain_E14.5_rep2
+</pre></div>
+</div>
+<p>However, as most of bioinformaticians, he was a bit lazy to finish the job and he asked you to do it instead! He sent you the <code class="docutils literal notranslate"><span class="pre">.psi.gz</span></code> he obtained. You can find these files at <code class="docutils literal notranslate"><span class="pre">Data/Advanced/</span></code>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><cite>rep</cite> indicate biological replicates and <cite>L</cite> technical replicates. On this script technical replicates are pooled during the quantification step.</p>
+</div>
+<div class="admonition-final-challenge admonition">
+<p class="admonition-title">FINAL CHALLENGE!</p>
+<p>Take back control of this splicing project and finish it up by taking the following steps:</p>
+<blockquote>
+<div><ol class="arabic simple">
+<li><p>Run the last necessary command to detect the alternatively spliced events associated to the embryonic development of mouse midbrain (between E10.5 and E14.E)</p></li>
+<li><p>Use your bash skills to calculate how many differentially spliced nodes you detect between these conditions and how many differentially spliced nodes of each type you could detect.</p></li>
+<li><p>Run the <cite>Data/Advanced/download_bam.sh</cite> script to get at least one <code class="docutils literal notranslate"><span class="pre">BAM</span></code> file representing each embryonic stage and use these to generate sashimi plots that enable you to inspect the nodes splicing nodes that change the most.</p></li>
+<li><p>Extract the names of genes in which you detected confident alternative splicing changes and perform gen ontology analyses.</p></li>
+</ol>
+</div></blockquote>
+</div>
 </div>
 
 

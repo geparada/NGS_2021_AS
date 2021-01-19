@@ -164,7 +164,7 @@
             
   <div class="section" id="detection-of-differentially-included-nodes">
 <h1>Detection of differentially included nodes<a class="headerlink" href="#detection-of-differentially-included-nodes" title="Permalink to this headline">¶</a></h1>
-<p>Congratulations if you have reached this point! This is the final step of the analysis :). To achieve the aim of determining the effect of <code class="docutils literal notranslate"><span class="pre">TBPH</span> <span class="pre">knockout</span></code> you just need to run whippet with the following syntax.</p>
+<p>Congratulations if you have reached this point! This is the final step of the analysis :). To achieve the aim of determining the effect of <code class="docutils literal notranslate"><span class="pre">bam</span> <span class="pre">mutation</span></code> you just need to run whippet with the following syntax.</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>julia <span class="o">{</span>path_bin<span class="o">}</span>/whippet-delta.jl -a sample1.psi.gz,sample1.psi.gz,sample1.psi.gz -b sample4.psi.gz,sample5.psi.gz,sample6.psi.gz -o <span class="o">{</span>output_basename<span class="o">}</span>
 </pre></div>
 </div>
@@ -187,13 +187,19 @@
 <div><ol class="arabic simple">
 <li><p>How many differentially included nodes did you find? (See documentation to find recommendations from the authors)</p></li>
 <li><p>How many of them might be biologically relevant based on DeltaPsi obtained values?</p></li>
-<li><p>What type of alternative splicing node are the ones found significantly different and biologically relevant <code class="docutils literal notranslate"><span class="pre">TBPH</span> <span class="pre">knockout</span></code>?</p></li>
+<li><p>What type of alternative splicing node are the ones found significantly different and biologically relevant <code class="docutils literal notranslate"><span class="pre">bam</span> <span class="pre">mutation</span></code>?</p></li>
 </ol>
 </div></blockquote>
 </div>
 <div class="admonition-challenge-5 admonition">
 <p class="admonition-title">Challenge 5</p>
-<p>Important part of the job as bioinformatician is to inspect the obtained results using a genome browser. Use the IGV to generate <a class="reference external" href="https://software.broadinstitute.org/software/igv/Sashimi">sashimi plots</a> that allow you to evaluate the changes if the changes in splicing after <code class="docutils literal notranslate"><span class="pre">TBPH</span> <span class="pre">knockout</span></code> looks convincing.</p>
+<p>Important part of the job as bioinformatician is to inspect the obtained results using a genome browser. In this case, the one of the best way to assess the results is by visual inspection:</p>
+<blockquote>
+<div><ol class="arabic simple">
+<li><p>Use the IGV to generate <a class="reference external" href="https://software.broadinstitute.org/software/igv/Sashimi">sashimi plots</a> that allow you to evaluate the changes if the changes in splicing after <code class="docutils literal notranslate"><span class="pre">bam</span> <span class="pre">mutation</span></code> looks convincing.</p></li>
+<li><p>According to the quantitative and qualitative results you have generated at this point, if you have to just choose one example to experimentally validate as AS event that is regulated during spermatogenesis, which one would you choose? Why?</p></li>
+</ol>
+</div></blockquote>
 </div>
 </div>
 
