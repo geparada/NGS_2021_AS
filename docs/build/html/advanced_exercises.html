@@ -190,17 +190,17 @@ julia /home/gp7/miniconda/envs/julia_0.6.1/share/julia/site/v0.6/Whippet/bin/whi
 <p>However, as most of bioinformaticians, he was a bit lazy to finish the job and he asked you to do it instead! He sent you the <code class="docutils literal notranslate"><span class="pre">.psi.gz</span></code> he obtained. You can find these files at <code class="docutils literal notranslate"><span class="pre">Data/Advanced/</span></code>.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p><cite>rep</cite> indicate biological replicates and <cite>L</cite> technical replicates. On this script technical replicates are pooled during the quantification step.</p>
+<p><code class="docutils literal notranslate"><span class="pre">rep</span></code> indicate biological replicates and <code class="docutils literal notranslate"><span class="pre">L</span></code> technical replicates. On this script technical replicates are pooled during the quantification step (check <code class="docutils literal notranslate"><span class="pre">--force-gz</span></code> parameter on Whippet’s documentation</p>
 </div>
 <div class="admonition-final-challenge admonition">
-<p class="admonition-title">FINAL CHALLENGE!</p>
+<p class="admonition-title">FINAL CHALLENGE</p>
 <p>Take back control of this splicing project and finish it up by taking the following steps:</p>
 <blockquote>
 <div><ol class="arabic simple">
 <li><p>Run the last necessary command to detect the alternatively spliced events associated to the embryonic development of mouse midbrain (between E10.5 and E14.E)</p></li>
-<li><p>Use your bash skills to calculate how many differentially spliced nodes you detect between these conditions and how many differentially spliced nodes of each type you could detect.</p></li>
-<li><p>Run the <cite>Data/Advanced/download_bam.sh</cite> script to get at least one <code class="docutils literal notranslate"><span class="pre">BAM</span></code> file representing each embryonic stage and use these to generate sashimi plots that enable you to inspect the nodes splicing nodes that change the most.</p></li>
-<li><p>Extract the names of genes in which you detected confident alternative splicing changes and perform gen ontology analyses.</p></li>
+<li><p>Use your bash skills to calculate how many differentially spliced nodes you detected between these conditions. How many of each splicing node type did you detect?</p></li>
+<li><p>Run the <code class="docutils literal notranslate"><span class="pre">Data/Advanced/download_bam.sh</span></code> script to get at least one <code class="docutils literal notranslate"><span class="pre">BAM</span></code> file representing each embryonic stage and use these to generate sashimi plots. Find some examples to show in your presentation.</p></li>
+<li><p>Generate a non-redundant list of genes with highly variable Core Exon nodes (CE) that has an absolute <code class="docutils literal notranslate"><span class="pre">DeltaPsi</span></code> value of at least 0.3 and <code class="docutils literal notranslate"><span class="pre">Probability</span></code> greater than 0.9. Use this list to perform <a class="reference external" href="http://bioinformatics.sdstate.edu/go/">gene ontology analyses</a> and protein-protein interaction networks analyses with <a class="reference external" href="https://string-db.org/">STRING</a> (if you reach this point please seek the attention of the instructor in charge of this project).</p></li>
 </ol>
 </div></blockquote>
 </div>

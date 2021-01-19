@@ -36,17 +36,17 @@ The number of genes that undergoes through alternative splicing is known to be s
 
 However, as most of bioinformaticians, he was a bit lazy to finish the job and he asked you to do it instead! He sent you the ``.psi.gz`` he obtained. You can find these files at ``Data/Advanced/``.
 
-.. note:: `rep` indicate biological replicates and `L` technical replicates. On this script technical replicates are pooled during the quantification step. 
+.. note:: ``rep`` indicate biological replicates and ``L`` technical replicates. On this script technical replicates are pooled during the quantification step (check ``--force-gz`` parameter on Whippet's documentation 
 
 
-.. admonition:: FINAL CHALLENGE! 
+.. admonition:: FINAL CHALLENGE
 
     Take back control of this splicing project and finish it up by taking the following steps:
 
         1. Run the last necessary command to detect the alternatively spliced events associated to the embryonic development of mouse midbrain (between E10.5 and E14.E)
-        2. Use your bash skills to calculate how many differentially spliced nodes you detect between these conditions and how many differentially spliced nodes of each type you could detect.
-        3. Run the `Data/Advanced/download_bam.sh` script to get at least one ``BAM`` file representing each embryonic stage and use these to generate sashimi plots that enable you to inspect the nodes splicing nodes that change the most.
-        4. Extract the names of genes in which you detected confident alternative splicing changes and perform gen ontology analyses. 
+        2. Use your bash skills to calculate how many differentially spliced nodes you detected between these conditions. How many of each splicing node type did you detect?
+        3. Run the ``Data/Advanced/download_bam.sh`` script to get at least one ``BAM`` file representing each embryonic stage and use these to generate sashimi plots. Find some examples to show in your presentation.
+        4. Generate a non-redundant list of genes with highly variable Core Exon nodes (CE) that has an absolute ``DeltaPsi`` value of at least 0.3 and ``Probability`` greater than 0.9. Use this list to perform `gene ontology analyses <http://bioinformatics.sdstate.edu/go/>`_ and protein-protein interaction networks analyses with `STRING <https://string-db.org/>`_ (if you reach this point please seek the attention of the instructor in charge of this project).
 
 
 

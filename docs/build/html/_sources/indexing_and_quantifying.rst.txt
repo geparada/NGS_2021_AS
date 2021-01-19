@@ -50,3 +50,6 @@ Where `out_dir/sample` is the base name for the output (five files will be gener
 .. admonition:: Challenge 2
 
     Apply the general syntax explained above to quantify the 6 samples you downloaded (``.fastq.gz`` files). You could write a bash script to do this.
+
+
+Note that the splicing nodes are quantified as Percent Spliced in (PSI), for detailed explanation of this unit please read `Schafer et al 2015 <https://www.researchgate.net/publication/282645615_Alternative_Splicing_Signatures_in_RNA-seq_Data_Percent_Spliced_in_PSI>`_.
