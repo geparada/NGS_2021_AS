@@ -5,9 +5,7 @@
 Advanced exercises
 ==================
 
-
-The number of genes that undergoes through alternative splicing is known to be substantially higher than invertebrates or other metazoans. Moreover, the biggest set of regulated AS events are associated with neuronal tissues and are particularly relevant during development of the brain. Therefore, you and your bioinformatician friend were excited to try out Whippet with some of the data that is available at `ENCODE <https://www.encodeproject.org>`_. You decided that would be interesting to process RNA-seq samples from midbrain to detect alternative splicing events between E10.5 and E14.5. To this end,  your bioinformatician friend wrote the following script in bash:
-
+The number of genes that undergoes through alternative splicing is substantially higher than invertebrates or other metazoans. Moreover, the most extensive set of regulated AS events are associated with neuronal tissues and are particularly relevant during the brain's development. Therefore, you and your bioinformatician friend were excited to try out Whippet with some of the available data at `ENCODE <https://www.encodeproject.org>`_.. You decided that it would be interesting to process RNA-seq samples from midbrain to detect alternative splicing events between E10.5 and E14.5. To this end, your bioinformatician friend wrote the following script in bash:
 
 .. code-block:: bash
 
