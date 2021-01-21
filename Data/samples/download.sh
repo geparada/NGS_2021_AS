@@ -1,4 +1,4 @@
-#/bin/bash
+#!/bin/bash
 
 fastq-dump SRR032300 --gzip
 fastq-dump SRR032303 --gzip
